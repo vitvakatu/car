@@ -1,0 +1,9 @@
+[package]
+name = "fuckthiside"
+version = "0.1.0"
+authors = ["goosedb"]
+
+[dependencies]
+rand = "0.3.0"
+gfx  = "*"
+termion = "*"
