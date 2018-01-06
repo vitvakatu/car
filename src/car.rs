@@ -1,19 +1,21 @@
 use support::{DIR, Coord};
 
-struct Car {
-    direction : DIR,
-    position  : Coord,
-    vec_speed : Coord,
-    val_speed : u32,
+pub struct Car {
+    pub direction : DIR,
+    pub position  : Coord,
+    pub vec_speed : Coord,
+    pub val_speed : u32,
 }
 
 impl Car {
-    fn new(x : u32, y : u32) -> Car {
+    pub fn new(x : i32, y : i32) -> Car {
         Car {
             position      : Coord::new(x, y),
             direction     : DIR::U,
-            vec_speed.x   :  0,
-            vec_speed.y   : -1,
+            vec_speed: Coord {
+                x: 0,
+                y: -1,
+            },
             val_speed     :  0,
 
         }

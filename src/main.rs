@@ -6,7 +6,7 @@ use std::io::stdout;
 
 mod car;
 mod support;
-
+use car::Car;
 //2 -- green 1 -- red 0 -- black
 
 fn main() {

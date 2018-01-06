@@ -1,12 +1,13 @@
-pub enum DIR { U, UR, R, RD, D, DL, L, LU };
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Hash)]
+pub enum DIR { U, UR, R, RD, D, DL, L, LU }
 
 pub struct Coord {
-    x : u32,
-    y : u32,
+    pub x : i32,
+    pub y : i32,
 }
 
 impl Coord {
-    fn new(x : u32, y: u32) -> Coord {
+    pub fn new(x : i32, y: i32) -> Coord {
         Coord { x : x, y : y }
     }
 }
